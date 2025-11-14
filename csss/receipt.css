@@ -1,0 +1,158 @@
+/* ===============================
+   PRINCESS TOUCH RECEIPT PAGE
+   =============================== */
+
+body {
+  background-color: #fdeef1;
+  font-family: 'Aboreto', cursive;
+}
+
+/* Section wrapper */
+.receipt-section {
+  background-color: #fdeef1;
+  min-height: 100vh;
+}
+
+/* Main Card */
+.receipt-card {
+  background-color: #fff;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Back button (top-left) */
+.back-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 600;
+  text-decoration: none;
+  color: #d16b8f;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  color: #000;
+}
+
+/* Headings */
+.receipt-card h2 {
+  color: #d16b8f;
+  font-weight: 700;
+}
+
+.text-highlight {
+  color: #d16b8f;
+}
+
+/* Info boxes */
+.info-box {
+  background-color: #fff0f4;
+  border: 1px solid #f4b7c4;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.info-box:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.info-box p {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* Product items */
+.product-item {
+  background-color: #fff0f4;
+  border: 1px solid #f4b7c4;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h5 {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.product-item p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   BACK HOME BUTTON DESIGN
+   =============================== */
+.back-home-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #e8a4b8 0%, #d16b8f 100%);
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 45px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(209, 107, 143, 0.3);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.back-home-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s ease;
+  border-radius: 50px;
+}
+
+.back-home-btn:hover::before {
+  left: 0;
+}
+
+.back-home-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(209, 107, 143, 0.4);
+  background: linear-gradient(135deg, #d16b8f 0%, #a64b6d 100%);
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .receipt-card {
+    padding: 1.5rem;
+  }
+
+  .product-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-item img {
+    margin-bottom: 10px;
+  }
+
+  .info-box {
+    text-align: center;
+  }
+
+  .back-home-btn {
+    width: 80%;
+    padding: 10px 20px;
+  }
+}

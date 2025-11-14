@@ -1,0 +1,142 @@
+body {
+    background-color: #fdeef1;
+    font-family: 'Aboreto', cursive;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero img {
+    border-radius: 20px;
+  }
+
+  .shop-btn {
+    background-color: #e5a6b8;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .shop-btn:hover {
+    color: whitesmoke;
+    background-color: black;
+  }
+
+  .icon {
+    width: 20px;
+    height: auto;
+    margin-top: -2px;
+    transition: 0.3s;
+  }
+
+  .icon:hover {
+    opacity: 0.8;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+    font-weight: 400;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #000;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+
+  .navbar-nav .nav-link img.icon {
+    transition: none;
+    vertical-align: middle;
+  }
+
+  .navbar-line {
+    border: none;
+    width: 85%;
+    height: 2px;
+    background-color: grey;
+    opacity: 1;
+    margin: 0
+  }
+
+  .bg-pink-light {
+    background-color: #fcd3d9;
+    border-radius: 63px;
+}
+
+.product-img {
+    width: 100px;      
+    height: 100px;     
+    object-fit: cover;
+    margin-right: 1rem; 
+}
+
+.favorite-item .btn-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+.form-check-input:checked {
+    background-color: #b85f62;
+    border-color: #b85f62;
+}
+
+.btn-dark {
+    background-color: #b85f62;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #a04c4f;
+}
+
+.rounded-4 {
+    border-radius: 63px;
+    opacity: 100;
+} 
+
+.heart-icon {
+    font-size: 1.3rem;
+    color: #b85f62;
+}
+
+.arrow-icon {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0 2rem;  /* increased margin for more space */
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -10px;  /* move arrow slightly left */
+}
+
+
+.product-info {
+    flex-grow: 1;
+    margin-left: -10px;
+     gap: 2rem;  
+}
+
+.product-info h5 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+.price, .quantity {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.favorite-item .d-flex {
+    position: relative;
+    padding: 0.8rem 1.rem;  /* adjusted padding to accommodate larger image */
+    align-items: center; 
+    gap: 1.7rem;
+}

@@ -1,0 +1,212 @@
+/* ==============================
+   PRINCESS TOUCH LOGIN PAGE
+   ============================== */
+
+body {
+  background-color: #FAECEC;
+  font-family: 'Aboreto', cursive;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Section */
+.login-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Card */
+.login-card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Left image */
+.login-img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+/* Right side content */
+.login-content {
+  padding: 2.5rem 1.5rem;
+}
+
+.brand-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #d16b8f;
+  font-size: 1.7rem;
+}
+
+.subtitle {
+  font-weight: 600;
+  color: #000;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.intro-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+.input-field {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #d16b8f;
+  box-shadow: 0 0 5px rgba(209, 107, 143, 0.3);
+  outline: none;
+}
+
+/* Eye icon */
+.toggle-eye {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.toggle-eye:hover {
+  color: #d16b8f;
+}
+
+/* Button */
+.btn-login {
+  background-color: #CF8888;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Social buttons */
+.btn-social {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+  background-color: #fce4ec;
+  border-color: #d16b8f;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  font-weight: 600;
+  color: #888;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  width: 40%;
+  background-color: #ddd;
+  position: absolute;
+  top: 50%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Links */
+.login-link,
+.back-link {
+  color: #7a5b5b;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.login-link:hover,
+.back-link:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* Footer links */
+.footer-links a {
+  color: #7a5b5b;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .login-img {
+    display: none;
+  }
+
+  .login-content {
+    padding: 2rem;
+  }
+
+  .btn-login {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-title {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .intro-text {
+    font-size: 0.85rem;
+  }
+
+  .btn-social {
+    font-size: 0.8rem;
+    padding: 6px 15px;
+  }
+}

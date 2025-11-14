@@ -1,0 +1,468 @@
+  body {
+    background-color: #fdeef1;
+    font-family: 'Aboreto', cursive;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero img {
+    border-radius: 20px;
+  }
+
+  .shop-btn {
+    background-color: #e5a6b8;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .shop-btn:hover {
+    color: whitesmoke;
+    background-color: black;
+  }
+
+  .icon {
+    width: 20px;
+    height: auto;
+    margin-top: -2px;
+    transition: 0.3s;
+  }
+
+  .icon:hover {
+    opacity: 0.8;
+  }
+
+
+  .navbar-nav .nav-link {
+    color: #333;
+    font-weight: 400;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #000;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+
+  .navbar-nav .nav-link img.icon {
+    transition: none;
+    vertical-align: middle;
+  }
+
+  .navbar-line {
+    border: none;
+    height: 2px;
+    background-color: grey;
+    opacity: 1;
+    margin: 0
+  }
+
+
+  .card-overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .card-overlay img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+  }
+
+
+  .overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.4s ease;
+    padding: 20px;
+  }
+
+
+  .card-overlay:hover img,
+  .card-overlay:focus img {
+    filter: blur(4px) brightness(0.7);
+    transform: scale(1.05);
+  }
+
+  .card-overlay:hover .overlay-content,
+  .card-overlay:focus .overlay-content {
+    opacity: 1;
+  }
+
+
+  .overlay-content h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .overlay-content p {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+
+  .side-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+  .side-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .about-text {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    font-weight: 600;
+  }
+
+  .brand {
+    color: #d16b8f;
+    font-weight: 700;
+  }
+
+  .shop-btn {
+    background-color: #e8a4b8;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .shop-btn:hover {
+    background-color: #d16b8f;
+  }
+
+  .best-seller {
+    background-color: #fdeef1;
+  }
+
+  .product-card {
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+  .bi-heart {
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .bi-heart:hover {
+    color: #e88cad;
+  }
+
+  .watch-section .bg-light-pink {
+    background-color: #f8d9e0;
+  }
+
+  .watch-section img {
+    border-radius: 20px;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .watch-section h5 {
+    font-weight: 700;
+    color: #3a3a3a;
+  }
+
+  .best-arrivals .product-card {
+    background-color: #fff;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .best-arrivals .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .best-arrivals img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+  }
+
+  /* ==== FOOTER ==== */
+  .footer-section {
+    background: linear-gradient(135deg, #f2b6c3 0%, #fcd5dc 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0 30px;
+  }
+
+  .footer-content {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
+    padding: 60px 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+  }
+
+  .footer-content h4 {
+    color: #e6e6e6;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  .footer-btns {
+    display: inline-block;
+    background-color: #f4b7c4 !important;
+    color: black !important;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .footer-btns:hover {
+    background-color: #d16b8f !important;
+    color: black !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+
+
+  .footer-btn {
+    display: inline-block;
+    background-color: #f4b7c4 !important;
+    color: black !important;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .footer-btn:hover {
+    background-color: #d16b8f !important;
+    color: black !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+
+  .footer-content a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-content a:hover {
+    color: #fff;
+  }
+
+  .footer-content ul {
+    padding: 0;
+  }
+
+  .footer-content ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-line {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .footer-bottom span {
+    margin: 5px 0;
+  }
+
+  .mission-vision h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .mission-vision p {
+    color: whitesmoke;
+    font-size: 1rem;
+  }
+
+  .see-all-design {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+
+  .see-all-design:hover {
+    color: rgb(20, 20, 96);
+    text-decoration: underline;
+  }
+
+  .ig-handle {
+    font-weight: 600;
+    color: #d16b8f;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+
+  .ig-handle:hover {
+    color: #b05274;
+    text-decoration: underline;
+  }
+
+  .seasonal-tips {
+    background-color: #fdeef1;
+  }
+
+  .seasonal-tips .card-overlay img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  .seasonal-tips .card-overlay:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+  }
+
+  .seasonal-tips .overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .seasonal-tips .card-overlay:hover .overlay-content {
+    opacity: 1;
+  }
+
+  /* ==== FAQ Section ==== */
+  .faq-section {
+    background-color: #fdeef1;
+    color: #333;
+  }
+
+  .faq-section h2 {
+    color: #000;
+    font-size: 2rem;
+  }
+
+  .faq-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  /* FAQ button */
+  .faq-question {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #d16b8f;
+    text-align: left;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .faq-question:hover {
+    color: #a94a6b;
+  }
+
+  .faq-question i {
+    transition: transform 0.3s ease;
+  }
+
+  /* Hidden answer */
+  .faq-answer {
+    display: none;
+    padding-left: 5px;
+    color: #555;
+    margin-top: 5px;
+  }
+
+  /* Active state */
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+
+  .faq-item.active .faq-question i {
+    transform: rotate(180deg);
+  }
+
+  .faq-section hr {
+    border: none;
+    border-top: 2px solid #f3c5d3;
+    opacity: 1;
+    margin: 15px 0;
+  }
+
+  .faq-section img {
+    border-radius: 25px;
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+

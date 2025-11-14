@@ -1,0 +1,180 @@
+body {
+  background-color: #fdeef1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main section */
+.register-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.register-card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  border: none;
+}
+
+/* Image side */
+.register-img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+/* Content */
+.register-content {
+  padding: 3rem 2rem;
+}
+
+.brand-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #d16b8f;
+  text-transform: none; /* ensure not uppercase */
+}
+
+.subtitle {
+  font-weight: 600;
+  color: #000;
+  text-transform: none; /* ensure not uppercase */
+}
+
+.intro-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-transform: none;
+}
+
+/* Input fields */
+.input-field {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease;
+  text-transform: none; /* ✅ Fix uppercase issue */
+}
+
+.input-field::placeholder {
+  text-transform: none; /* Prevent placeholder caps */
+}
+
+.input-field:focus {
+  border-color: #d16b8f;
+  box-shadow: 0 0 5px rgba(209, 107, 143, 0.3);
+}
+
+/* Show password */
+.show-password label {
+  font-size: 0.85rem;
+  color: #666;
+  cursor: pointer;
+}
+
+/* Buttons */
+.btn-register {
+  background-color: #d16b8f;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.btn-register:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Social Buttons */
+.btn-social {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.btn-social:hover {
+  background-color: #fce4ec;
+  border-color: #d16b8f;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  font-weight: 600;
+  color: #888;
+  position: relative;
+  text-transform: none;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  width: 40%;
+  background-color: #ddd;
+  position: absolute;
+  top: 50%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Links */
+.login-link,
+.back-link {
+  color: #7a5b5b;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.login-link:hover,
+.back-link:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* Footer links */
+.footer-links a {
+  color: #7a5b5b;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .register-img {
+    display: none;
+  }
+
+  .register-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .btn-register {
+    width: 100%;
+  }
+}
